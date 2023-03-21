@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import CsvDownload from './CsvDownload';
 import TextToCsvConverter from './TextToCsv';
+import './App.css';
+ 
 
 function App() {
 
@@ -13,11 +15,11 @@ function App() {
   return (
     <div className='list-container'>
       <table id='main-table'>
-        <thead>
-          <tr id=''>
-            <th>Identificação</th>
-            <th>Setor</th>
-            <th>Numero</th>
+        <thead className='table-container'>
+          <tr>
+            <th className='c1'>Identificação</th>
+            <th className='c2'>Setor</th>
+            <th className='c3'>Numero</th>
           </tr>
         </thead>
         <tbody>

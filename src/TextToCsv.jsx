@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+
 const TextToCsvConverter = () => {
   const [text, setText] = useState('');
 
@@ -28,13 +29,13 @@ const TextToCsvConverter = () => {
   };
 
   return (
-    <div>
-      <textarea
+    <div className='converter-container'>
+      <textarea className='text-container'
         value={text}
         onChange={(e) => setText(e.target.value)}
-        placeholder="Enter text to convert to CSV"
+        placeholder="Coloque aqui o texto para converter em uma tabela"
       />
-      <button onClick={handleConvert}>Convert to CSV</button>
+      <button className='convert-button' onClick={handleConvert}>Convert to CSV</button>
     </div>
   );
 };

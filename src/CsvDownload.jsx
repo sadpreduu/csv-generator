@@ -14,7 +14,7 @@ const CsvDownload = ({ data }) => {
   };
 
   return (
-    <button onClick={handleDownload}>Download CSV</button>
+    <button className='download-button' onClick={handleDownload}>Baixar Texto como CSV</button>
   );
 };
 
